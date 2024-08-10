@@ -13,7 +13,7 @@ A simple sign-up form created as part of [The Odin Project](https://www.theodinp
 - CSS3
 
 
-Here is the [Live Demo](abnsol.github.io/Sign-Up-Form)
+Here is the [Live Demo](https://abnsol.github.io/Sign-Up-Form)
 
 ## Clone repository
 
