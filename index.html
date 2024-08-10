@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/images/favicon.svg">
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+            <div id="logo">
+                <img src="/images/odin-lined.png" alt="odin logo" id="odinlogo">
+                ODIN    
+            </div>
+            <div id="pic-by">Photo by Haile west on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">unsplash </a></div>
+        </div>
+        <div id="right">
+            <div id="msg">
+                <div id="msgp1">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.Sign up now to get started.</div>
+                <div id="msgp2">You <em>know</em> you want to.</div>
+            </div>
+            
+                <form action="" method="post">
+                    <div id="form">
+                    <div id="top">
+                        <legend>Let's do this!</legend>
+                        <fieldset>
+                        <div><label for="firstname">FIRST NAME</label>
+                        <input type="text" name="First name" id="firstname" minlength="3" maxlength="10"></div>
+                        <div><label for="lastname">LAST NAME</label>
+                        <input type="text" name="Last name" id="lastname" required minlength="3" maxlength="10"></div>
+                        </fieldset>
+                        <fieldset>
+                        <div>
+                        <label for="mail">EMAIL</label>
+                        <input type="email" id="mail" name="email address" placeholder='example@gmail.com' required></div>
+                        <div>
+                        <label for="tel">PHONE NUMBER</label>
+                            <input type="tel" id="tel" name="phone number" pattern="[\+]\d{12}" placeholder="+ 2519xxxxxxxx" required></div>
+                        </fieldset>
+                        <fieldset>
+                            <div>
+                        <label for="pass">PASSWORD</label>
+                        <input type="password" id="pass" name="password" min="6" max="30" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                        </div>
+                        <div>
+                        <label for="confirm">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required></div>
+                        </fieldset>
+                    </div>
+                    <div id="bottom">
+                        <div id="button-div">
+                            <button type="submit">Create Account</button>
+                        </div>
+                        <div id="bottomdiv">Already have an account? Log in </div>
+                    </div>
+                </div>
+                </form>
+            
+        </div>
+
+    </div>
+    
+</body>
+</html>
