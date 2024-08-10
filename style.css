@@ -1,11 +1,13 @@
 @font-face {
     font-family: "Norse";
     src: url(/fonts/Norse-Bold.otf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: "roboto";
     src: url(/fonts/Roboto/Roboto-Regular.ttf);
+    font-display: swap;
 }
 
 *, *::before, *::after {
@@ -49,7 +51,7 @@ input, button, textarea, select { /* 6. Remove built-in form typography styles *
 }
 
 #left{
-    background: url(/images/bg-image.jpg) 50% 0%/cover no-repeat
+    background: url(images/bg-image.jpg) 50% 0%/cover no-repeat
     padding-box border-box scroll transparent;
     display: flex;
     justify-content: start;
