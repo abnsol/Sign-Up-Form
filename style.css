@@ -1,0 +1,212 @@
+@font-face {
+    font-family: "Norse";
+    src: url(/fonts/Norse-Bold.otf);
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box; /*1. Use a more-intuitive box-sizing model.*/
+}
+
+* {
+    margin: 0; /* 2. Remove default margin */
+}
+
+body {
+    line-height: 1.2; /* Typographic tweaks! 3. Add accessible line-height  4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+    font-family: "roboto"; 
+}
+
+img, picture, video, canvas, svg { /* 5. Improve media defaults */
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select { /* 6. Remove built-in form typography styles */
+    font: inherit;
+}
+
+#root, #__next { /* 8. Create a root stacking context */
+    isolation: isolate;
+}
+
+#container{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    max-width: 800px;
+    min-height: 600px;
+}
+
+#left{
+    background: url(/images/bg-image.jpg) 50% 0%/cover no-repeat
+    padding-box border-box scroll transparent;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color:white;
+    position: relative;
+    flex: 0 0 35%;
+}
+
+#logo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);   
+    font: 55px "Norse",monospace;
+    bottom: 20%;
+}
+
+#odinlogo{
+    width: 20%;
+}
+
+#pic-by{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 97%;
+    left: 22%;
+    font-size: 50%;
+}
+
+a{
+    text-decoration: none;
+    color: #5b96ee;
+    margin: 3px;
+}
+
+#right{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: white;
+    flex: 1;
+}
+
+#msg,#bottom{
+    background-color: #ece7e0;   
+}
+
+#msg{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-top: 70px;
+    max-inline-size: 50ch;
+    font-weight: 500;
+    gap: 20px;
+    min-width: 100%;
+}
+
+#msgp1,#msgp2{
+    min-width: 100%;
+    flex: 1 1 auto;
+    font-size:  clamp(0.7rem,0.7rem + 0.2vw,1rem);
+}
+
+form{
+    flex: 4;
+    display: flex;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1;
+}
+
+#top{
+    display: flex;
+    background-color: white;
+    flex: 1;
+    padding: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1;
+    gap: calc(0.5rem + 1vw);
+    padding: 20px;
+    font-size: clamp(0.5rem,0.5rem + 0.5vw,1rem);
+}
+
+input,label{       
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 0.45em;
+    margin: 5px;
+    font-weight: 600;
+}
+
+fieldset{
+    display: flex;
+    gap:calc(0.5rem + 1vw);
+    padding: 0;
+    border: none;
+    gap: 20px;
+}
+
+input:focus:invalid,
+input:focus:valid {
+    outline: none;
+    border: 1px solid rgb(89, 108, 214);
+    box-shadow: 1px 0 2px rgb(89, 108, 214); 
+}
+
+input{
+    width: 200px;
+    height: 50%;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    font-size: clamp(0.7rem,0.7rem + 0.2vw,1rem);
+}
+
+input:invalid{
+    border: 1px solid red;
+
+}
+
+input:valid:focus{
+    background-color: rgb(126, 233, 171);
+}
+input:invalid:focus{
+    background-color: rgb(250, 195, 195);
+}
+
+button{
+    background-color: #4c5a40;
+    border-radius: 5px;
+    color:rgb(255, 253, 253);
+    min-width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    min-height: 30px;
+}
+
+
+
